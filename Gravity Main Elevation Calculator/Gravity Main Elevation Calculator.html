@@ -1,0 +1,62 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <title>Gravity Main Elevation Calculator</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+  
+ <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+ <script src = "Javascript\Gravity Main Elevation Calculator Javascript.js"> </script>
+ <link rel = "stylesheet" type = "text/css" href = "CSS\Gravity Main Elevation Calculator CSS.css">
+ 
+</head>
+<body>
+ 
+	<div class = "dashboardGridContainer">
+		
+		<div id = "graph-container" class = "dashboardLineChart">
+  
+		</div>
+		
+		<div class = "dashboardInfoInput">
+			<form>
+				<label> Enter length (ft.) of the sewer main </label>
+				<input type = "text" id = "lengthInput" value = "195.5"> </input>
+				
+				<br>
+				<br>
+				
+				<label> Enter slope (in degrees) of the sewer main </label>
+				<input type = "text" id = "slopeInput" value = "1.43"> </input>
+				
+				<br>
+				<br>
+				
+				<label> Enter downstream elevation (ft.) of the sewer main </label>
+				<input type = "text" id = "DSElevationInput" value = "150.53"> </input>
+				
+				<br>
+				<br>
+				
+				<button type = "button" id = "drawGraphButton" onclick = "displayData()" > Calculate Upstream Elevation</button> <span id = "errorMessageLocation">Put in all the required info. </span>
+				
+
+			</form>
+		 
+		 </div>
+		 
+		<div class = "dashboardUpstreamElevation">
+		
+			<h1>
+				Upstream Elevation is : <span id = "dashboardUpstreamElevDisplay"></span>
+			</h1>
+			
+		</div>
+
+	</div>
+
+</body>
+</html>
