@@ -1,0 +1,66 @@
+.noBulletPointsLists {
+	list-style-type: none;
+}
+
+.profileNameMargins {
+	font-size: 25px;
+	margin: 5px;
+}
+
+div.exampleTable table, div.exampleTable th, div.exampleTable tr, div.exampleTable td{
+	border: 2px solid black; 
+	border-collapse: collapse;
+	padding: 5px;
+}
+
+.exampleGrid {
+	background-color: #f5e6ca;
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: 400px 400px 400px;
+	grid-template-rows: 70px 50px 50px 50px;
+	margin: 0px;
+	
+}
+
+.exampleGrid > div {
+	align-items: center;
+	border-style: solid;
+	background-color: #fb9300;
+	display: flex;
+	justify-content: center;
+	padding: 10px;
+	text-align: center;
+}
+
+
+.exampleGridColumnHeaderCartography {
+	font-size: 30px;
+	grid-column: 1/2;
+	grid-row: 1;
+	text-align: center;
+}
+
+.exampleGridColumnHeaderProgramming {
+	font-size: 30px;
+	grid-column: 2/3;
+	grid-row: 1;
+	text-align: center;
+}
+
+.exampleGridColumnHeaderDashboards {
+	font-size: 30px;
+	grid-column: 3/4;
+	grid-row: 1;
+	text-align: center;
+}
+body {
+	background-color: #f5e6ca;
+	color: #343f56;
+}
+
+hr {
+	border-style: dotted;
+	margin: 0px;
+	width: 70%
+}
