@@ -1,3 +1,68 @@
+.bodyContainer {
+	align-items: top;
+	display: grid;
+	grid-template-columns: 1200px;
+	grid-template-rows: 500px 1500px;
+	justify-content: center;
+	
+}
+
+.topContainer {
+	align-items: center;
+	/*background-color: #f5e6ca; */
+	display: grid;
+	grid-column: 1;
+	grid-template-columns: 400px 400px 400px;
+	grid-template-rows: 48px 452px;
+	grid-row: 1;
+	justify-content: start;
+}
+
+.topContainerMenuBar {
+	background-color: #fb9300;
+	grid-column: 1 / 4;
+	grid-row: 1; 	
+}
+
+.topContainerIdentity {
+	grid-column: 1;
+	grid-row: 2;	
+}
+
+.topContainerPhotoMirage {
+	background-color: white;
+	grid-column: 2 / 4;
+	grid-row: 2;
+}
+
+.mainBody {
+	background-color: #f5e6ca;
+	grid-column: 1;
+	grid-row: 2;
+	margin-left: 200px;
+	margin-right: 200px;
+	padding: 20px;
+}
+
+
+.topMenuBar {
+	margin: 0px;
+	padding-left: 15px;
+}
+
+ul.topMenuBar li {
+	display: inline;
+	float: left;
+	list-style-type: none;
+	overflow: hidden;
+	padding: 15px;
+	justify-content: left;
+}
+
+ul.topMenuBar li:hover  {
+	background-color: #b86c02;
+}
+
 .noBulletPointsLists {
 	list-style-type: none;
 }
@@ -5,6 +70,10 @@
 .profileNameMargins {
 	font-size: 25px;
 	margin: 5px;
+}
+
+div.mainBody div {
+	justify-content: center;
 }
 
 div.exampleTable table, div.exampleTable th, div.exampleTable tr, div.exampleTable td{
