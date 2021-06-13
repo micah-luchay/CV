@@ -6,16 +6,15 @@
 	<meta name="description" content="" />
 	<meta name="keywords" content="" />
 	<meta name="robots" content="index,follow" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
 	<link rel="stylesheet" type="text/css" href="Stylesheets/indexStyling.css" />
-	
 </head>
 
 <body>
 	<div class = "bodyContainer">
 		<div class = "topContainer">
-		
-			<br>
+
 			<div class = "topContainerMenuBar">
 				<ul class = "topMenuBar"> 
 					<li> <a href = "https://www.linkedin.com/in/micah-luchay-a86219178/">LinkedIn Profile</a></li>
@@ -25,7 +24,7 @@
 			</div>
 		
 			<div class = "topContainerIdentity">
-				<table cellspacing = "10">
+				<table cellspacing = "9" class = "identityTable">
 					<tr>
 						<td> 
 							<img src = "Photos/Me/circle-cropped Me in the Office.png" height = "225px" alt="Micah profile pic" > 
@@ -46,23 +45,28 @@
 			</div>
 			
 			<div class = "topContainerPhotoMirage">
-				<pre  style = "height: 452px; width = 800px; margin: 0;"> 
+				<div class = "leftArrowPhotoMirage">
+					<img src = "Photos\Navigation Icons\Nav_Left.png" alt = "left navigation" class = "arrow" onclick = "clickLeftSlideShowArrow()">
+				</div>
 				
+				<div class = "photoSlideShowContainer">
+					<img src = "Photos\Examples\Slideshow\Town of Irmo Meeting.png" alt = "City owned assets in Lexington area" class = "photoSlideShow" id = "photoSlide">
+				</div>
 				
+				<div class = "rigthArrowPhotoMirage">
+					<img src = "Photos\Navigation Icons\Nav_Right.png" alt = "right navigation" class = "arrow" onclick = "clickRightSlideShowArrow()">
+				</div>
 				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-					    Under development!
-				
-				</pre>
+				<div class = "slideShowNavContainer">
+					<div class = "slideShowDotContainer">
+						<span class = "dot" id = "firstSlide" onclick = "clickDot(0)"></span>
+						<span class = "dot" id = "secondSlide" onclick = "clickDot(1)"></span>
+						<span class = "dot" id = "thirdSlide" onclick = "clickDot(2)"></span>
+					</div>
+					<div class = "slideShowTextContainer">
+						<span id = "slideText"> Loading </span>
+					</div>
+				</div>
 			</div>
 			
 		</div>
@@ -206,5 +210,6 @@
 		</div>
 	</div>
 	
+<script src="Javascript\indexJavascript.js"></script>
 </body>
 </html>
