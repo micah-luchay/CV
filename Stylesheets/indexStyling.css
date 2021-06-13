@@ -13,10 +13,10 @@ hr {
 .bodyContainer {
 	align-items: top;
 	display: grid;
-	grid-template-columns: 1200px;
-	grid-template-rows: 500px 1500px;
+	grid-template-columns: 0.75fr;
+	grid-template-rows: 0.85fr 2fr;
 	justify-content: center;
-	
+	position: relative;
 }
 
 	.topContainer {
@@ -24,11 +24,10 @@ hr {
 		align-items: center;
 		display: grid;
 		grid-column: 1;
-		grid-template-columns: 400px 400px 400px;
-		grid-template-rows: 48px 452px;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr 9.417fr;
 		grid-row: 1;
 		justify-content: center;
-		width: 100%;
 	}
 
 		.topContainerMenuBar {
@@ -87,7 +86,7 @@ hr {
 			grid-row: 2;
 			height: 100%;
 			justify-content: center;
-			position: relative;
+			overflow: hidden;
 			text-align: center;
 			width: 100%;
 		}
@@ -110,17 +109,17 @@ hr {
 				grid-row: 1 / span 2;
 				justify-content: center;
 			}
-							
-
+						
 			.photoSlideShowContainer {
 				grid-column: 2;
 				grid-row: 1;
+				overflow: hidden;
+			
 			}
 			
 				.photoSlideShow {
-					max-height: 100%;
-					max-width: 100%;
-					transition: 1s;
+					height: 100%;
+					width: 100%;
 				}
 
 			.rigthArrowPhotoMirage {
@@ -169,6 +168,7 @@ hr {
 					display: inline;
 					grid-column: 2 / span 6;
 					grid-row: 1;
+					
 				}
 
 
@@ -198,8 +198,8 @@ hr {
 			background-color: #f5e6ca;
 			display: grid;
 			grid-gap: 10px;
-			grid-template-columns: 400px 400px 400px;
-			grid-template-rows: 70px 50px 50px 50px;
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-template-rows: 0.55fr 0.5fr 0.5fr 0.5fr;
 			margin: 0px;	
 		}
 		
@@ -221,21 +221,21 @@ hr {
 
 
 			.exampleGridColumnHeaderCartography {
-				font-size: 30px;
+				font-size: 20px;
 				grid-column: 1/2;
 				grid-row: 1;
 				text-align: center;
 			}
 
 			.exampleGridColumnHeaderProgramming {
-				font-size: 30px;
+				font-size: 20px;
 				grid-column: 2/3;
 				grid-row: 1;
 				text-align: center;
 			}
 
 			.exampleGridColumnHeaderDashboards {
-				font-size: 30px;
+				font-size: 20px;
 				grid-column: 3/4;
 				grid-row: 1;
 				text-align: center;
