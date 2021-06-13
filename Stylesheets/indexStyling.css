@@ -1,128 +1,3 @@
-.bodyContainer {
-	align-items: top;
-	display: grid;
-	grid-template-columns: 1200px;
-	grid-template-rows: 500px 1500px;
-	justify-content: center;
-	
-}
-
-.topContainer {
-	align-items: center;
-	/*background-color: #f5e6ca; */
-	display: grid;
-	grid-column: 1;
-	grid-template-columns: 400px 400px 400px;
-	grid-template-rows: 48px 452px;
-	grid-row: 1;
-	justify-content: start;
-}
-
-.topContainerMenuBar {
-	background-color: #fb9300;
-	grid-column: 1 / 4;
-	grid-row: 1; 	
-}
-
-.topContainerIdentity {
-	grid-column: 1;
-	grid-row: 2;	
-}
-
-.topContainerPhotoMirage {
-	background-color: white;
-	grid-column: 2 / 4;
-	grid-row: 2;
-}
-
-.mainBody {
-	background-color: #f5e6ca;
-	grid-column: 1;
-	grid-row: 2;
-	margin-left: 200px;
-	margin-right: 200px;
-	padding: 20px;
-}
-
-
-.topMenuBar {
-	margin: 0px;
-	padding-left: 15px;
-}
-
-ul.topMenuBar li {
-	display: inline;
-	float: left;
-	list-style-type: none;
-	overflow: hidden;
-	padding: 15px;
-	justify-content: left;
-}
-
-ul.topMenuBar li:hover  {
-	background-color: #b86c02;
-}
-
-.noBulletPointsLists {
-	list-style-type: none;
-}
-
-.profileNameMargins {
-	font-size: 25px;
-	margin: 5px;
-}
-
-div.mainBody div {
-	justify-content: center;
-}
-
-div.exampleTable table, div.exampleTable th, div.exampleTable tr, div.exampleTable td{
-	border: 2px solid black; 
-	border-collapse: collapse;
-	padding: 5px;
-}
-
-.exampleGrid {
-	background-color: #f5e6ca;
-	display: grid;
-	grid-gap: 10px;
-	grid-template-columns: 400px 400px 400px;
-	grid-template-rows: 70px 50px 50px 50px;
-	margin: 0px;
-	
-}
-
-.exampleGrid > div {
-	align-items: center;
-	border-style: solid;
-	background-color: #fb9300;
-	display: flex;
-	justify-content: center;
-	padding: 10px;
-	text-align: center;
-}
-
-
-.exampleGridColumnHeaderCartography {
-	font-size: 30px;
-	grid-column: 1/2;
-	grid-row: 1;
-	text-align: center;
-}
-
-.exampleGridColumnHeaderProgramming {
-	font-size: 30px;
-	grid-column: 2/3;
-	grid-row: 1;
-	text-align: center;
-}
-
-.exampleGridColumnHeaderDashboards {
-	font-size: 30px;
-	grid-column: 3/4;
-	grid-row: 1;
-	text-align: center;
-}
 body {
 	background-color: #f5e6ca;
 	color: #343f56;
@@ -133,3 +8,235 @@ hr {
 	margin: 0px;
 	width: 70%
 }
+
+
+.bodyContainer {
+	align-items: top;
+	display: grid;
+	grid-template-columns: 1200px;
+	grid-template-rows: 500px 1500px;
+	justify-content: center;
+	
+}
+
+	.topContainer {
+		/*background-color: #f5e6ca; */
+		align-items: center;
+		display: grid;
+		grid-column: 1;
+		grid-template-columns: 400px 400px 400px;
+		grid-template-rows: 48px 452px;
+		grid-row: 1;
+		justify-content: center;
+		width: 100%;
+	}
+
+		.topContainerMenuBar {
+			background-color: #fb9300;
+			grid-column: 1 / span 3;
+			grid-row: 1;
+			
+		}
+		
+			.topMenuBar {
+				margin: 0px;
+				padding-left: 15px;
+			}
+
+			ul.topMenuBar li {
+				display: inline;
+				float: left;
+				list-style-type: none;
+				overflow: hidden;
+				padding: 5px;
+				justify-content: left;
+			}
+
+			ul.topMenuBar li:hover  {
+				background-color: #b86c02;
+			}
+
+		.topContainerIdentity {
+			align-items: center;
+			grid-column: 1;
+			grid-row: 2;	
+			height: 100%;
+			justify-content: center;
+			width: 100%;
+		}
+		
+			.identityTable {
+				height: 100%;
+				width: 100%;
+			}
+			
+				.profileNameMargins {
+					font-size: 25px;
+					margin: 5px;
+				}
+
+		.topContainerPhotoMirage {
+			align-items: center;
+			outline: 2px solid black;
+			outline-offset: -2px;
+			background-color: white;
+			display: grid;
+			grid-template-columns: 1fr 5fr 1fr;
+			grid-template-rows: 15fr 1fr;
+			grid-column: 2 / span 3;
+			grid-row: 2;
+			height: 100%;
+			justify-content: center;
+			position: relative;
+			text-align: center;
+			width: 100%;
+		}
+			
+			.arrow {
+				border-radius: 5px;
+				cursor: pointer;
+				height: 10%;
+				transition: background-color 0.5s;
+			}	
+
+			img.arrow:hover {
+				background-color: #A9A9A9;
+			}		
+
+			.leftArrowPhotoMirage {
+				align-items: center;
+				display: flex;
+				grid-column: 1;
+				grid-row: 1 / span 2;
+				justify-content: center;
+			}
+							
+
+			.photoSlideShowContainer {
+				grid-column: 2;
+				grid-row: 1;
+			}
+			
+				.photoSlideShow {
+					max-height: 100%;
+					max-width: 100%;
+					transition: 1s;
+				}
+
+			.rigthArrowPhotoMirage {
+				align-items: center;
+				display: flex;
+				grid-column: 3;
+				grid-row: 1 / span 2;
+				justify-content: center;
+			}
+			
+
+			.slideShowNavContainer {
+				align-items: center;
+				display: grid;
+				grid-column: 1 / span 3;
+				grid-row: 2;
+				grid-template-columns: 1fr 6fr;
+				grid-template-rows: 1fr;
+				justify-content: space-around;
+			}
+				.dot {
+					background-color: #bbb;
+					border-radius: 50%;
+					cursor: pointer;
+					display: inline-block;
+					height: 15px;
+					position: relative;
+					vertical-align: top;
+					width: 15px;
+				}
+
+				span.dot:hover {
+					background-color: #383838;
+					border-radius: 50%;
+					cursor: pointer;
+					display: inline-block;
+				}
+				
+				.slideShowDotContainer {
+					display: inline;
+					grid-column: 1;
+					grid-row: 1;
+				}
+
+				.slideShowTextContainer {
+					display: inline;
+					grid-column: 2 / span 6;
+					grid-row: 1;
+				}
+
+
+
+
+
+	.mainBody {
+		background-color: #f5e6ca;
+		grid-column: 1;
+		grid-row: 2;
+		margin-left: 200px;
+		margin-right: 200px;
+	}
+
+
+		.noBulletPointsLists {
+			list-style-type: none;
+		}
+
+
+		div.mainBody div {
+			justify-content: center;
+		}
+
+
+		.exampleGrid {
+			background-color: #f5e6ca;
+			display: grid;
+			grid-gap: 10px;
+			grid-template-columns: 400px 400px 400px;
+			grid-template-rows: 70px 50px 50px 50px;
+			margin: 0px;	
+		}
+		
+			div.exampleTable table, div.exampleTable th, div.exampleTable tr, div.exampleTable td{
+				border: 2px solid black; 
+				border-collapse: collapse;
+				padding: 5px;
+			}
+
+			.exampleGrid > div {
+				align-items: center;
+				border-style: solid;
+				background-color: #fb9300;
+				display: flex;
+				justify-content: center;
+				padding: 10px;
+				text-align: center;
+			}
+
+
+			.exampleGridColumnHeaderCartography {
+				font-size: 30px;
+				grid-column: 1/2;
+				grid-row: 1;
+				text-align: center;
+			}
+
+			.exampleGridColumnHeaderProgramming {
+				font-size: 30px;
+				grid-column: 2/3;
+				grid-row: 1;
+				text-align: center;
+			}
+
+			.exampleGridColumnHeaderDashboards {
+				font-size: 30px;
+				grid-column: 3/4;
+				grid-row: 1;
+				text-align: center;
+			}
