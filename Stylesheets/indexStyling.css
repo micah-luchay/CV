@@ -34,7 +34,6 @@ hr {
 			background-color: #fb9300;
 			grid-column: 1 / span 3;
 			grid-row: 1;
-			
 		}
 		
 			.topMenuBar {
@@ -45,14 +44,19 @@ hr {
 			ul.topMenuBar li {
 				display: inline;
 				float: left;
+				justify-content: left;
 				list-style-type: none;
 				overflow: hidden;
 				padding: 5px;
-				justify-content: left;
 			}
 
 			ul.topMenuBar li:hover  {
 				background-color: #b86c02;
+			}
+			
+			ul.topMenuBar a:link, a:visited {
+				color: #343f56;
+				text-decoration: none;
 			}
 
 		.topContainerIdentity {

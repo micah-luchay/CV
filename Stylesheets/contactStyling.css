@@ -1,0 +1,19 @@
+body {
+	background-color: #f5e6ca;
+	color: #343f56;
+}
+
+	table, th, tr, td {
+			border: 2px solid black; 
+			border-collapse: collapse;
+			padding: 8px;
+			}
+			
+			input {
+			margin: 7px;
+			}
+			
+			#messageLabel {
+			height: 100px;
+			width: 300px;
+			}
