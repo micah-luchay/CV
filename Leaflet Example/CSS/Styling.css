@@ -1,0 +1,23 @@
+body {
+	background-color: #65c9e9;
+
+}
+
+.mapContainer {
+	border-style: solid;
+	border-width: 2px;
+	display: inline-block;
+	height: 600px;
+	width: 900px;
+}
+
+#flagContainer {
+	display: inline-block;
+	height: 604px;
+	width: 904px;
+}
+
+#flagImage {
+	height: 100%;
+	width: 100%;
+}
