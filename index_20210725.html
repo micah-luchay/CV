@@ -1,0 +1,216 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>Micah Luchay's CV</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="robots" content="index,follow" />
+	<meta name="viewport" content="width=device-width, initial-scale=0.25, user-scalable=no">
+	
+	<link rel="stylesheet" type="text/css" href="Stylesheets/indexStyling.css" />
+</head>
+
+<body>
+	<div class = "bodyContainer">
+		<div class = "topContainer">
+
+			<div class = "topContainerMenuBar">
+				<ul class = "topMenuBar"> 
+					<li> <a href = "https://www.linkedin.com/in/micah-luchay-a86219178/">LinkedIn Profile</a></li>
+					<li> <a href = "https://github.com/micah-luchay?tab=repositories">Additional Programming Examples</a></li>
+					<li> <a href= "Contact Info.html">Contact</a></li>
+				</ul>
+			</div>
+		
+			<div class = "topContainerIdentity">
+				<table cellspacing = "9" class = "identityTable">
+					<tr>
+						<td> 
+							<img src = "Photos/Me/circle-cropped Me in the Office.png" height = "225px" alt="Micah profile pic" > 
+						</td>
+						<td>
+							<p class = "profileNameMargins">
+								<strong> Micah Luchay </strong>
+							</p>
+							<p class = "profileNameMargins">
+								<em>GIS Professional </em>
+							</p>
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+				</table>
+			</div>
+			
+			<div class = "topContainerPhotoMirage">
+				<div class = "leftArrowPhotoMirage">
+					<img src = "Photos\Navigation Icons\Nav_Left.png" alt = "left navigation" class = "arrow" onclick = "clickLeftSlideShowArrow()">
+				</div>
+				
+				<div class = "photoSlideShowContainer">
+					<img src = "Photos\Examples\Slideshow\Town of Irmo Meeting.png" alt = "City owned assets in Lexington area" class = "photoSlideShow" id = "photoSlide">
+				</div>
+				
+				<div class = "rigthArrowPhotoMirage">
+					<img src = "Photos\Navigation Icons\Nav_Right.png" alt = "right navigation" class = "arrow" onclick = "clickRightSlideShowArrow()">
+				</div>
+				
+				<div class = "slideShowNavContainer">
+					<div class = "slideShowDotContainer">
+						<span class = "dot" id = "firstSlide" onclick = "clickDot(0)"></span>
+						<span class = "dot" id = "secondSlide" onclick = "clickDot(1)"></span>
+						<span class = "dot" id = "thirdSlide" onclick = "clickDot(2)"></span>
+						<span class = "dot" id = "fourthSlide" onclick = "clickDot(3)"></span>
+					</div>
+					<div class = "slideShowTextContainer">
+						<span id = "slideText"> Loading </span>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	
+		<div class = "mainBody">
+			<h2> About </h2>
+
+			<hr>
+
+			<p>
+			Good day! My name is Micah and I'm a GIS professional! Ranging from spatial programming to routine GIS maintenance, my experience includes conservation and utilites over the past 4 years.
+			</p>
+
+			<h3> Work Experience </h3>
+			<ul class = "noBulletPointsLists">
+				<li><strong>Senior Mapping Technician (July 2019 - Present)</strong> </li>
+				<li><em>City of Columbia, SC</em></li>
+				<br>
+					<ul>
+						<li> Analyze, review, and integrate data into the City’s database</li>
+						<li> Write scripts in Python and ArcPy to automate tasks</li>
+						<li> Wrangle data to create useable data formats</li>
+						<li> Provide technical consultation to project managers</li>
+					</ul>
+				<br>
+				<li><strong>GIS Intern (Jan. 2019 - May 2019)</strong></li>
+				<li><em>SC Dept. of Natural Resources</em></li>
+				<br>
+					<ul>
+						<li>Create a statewide conservation map in accordance to S.C. Code Ann. §48-59-50</li>
+						<li>Data mine various government documents using Python</li>
+						<li>Write scripts in ArcPy to automate GIS tasks</li>
+						<li>Use various tools in ArcMap for data analysis</li>
+						
+					</ul>
+				<br>
+				<li><strong>Geo-referencer (Nov. 2017 - Jan. 2019)</strong></li>
+				<li><em>University of SC</em></li>
+				<br>
+					<ul>
+						<li>Geo-reference historic aerial images to modern day satellite imagery using ArcMap</li>
+						<li>Create metadata documents for each assigned project</li>
+					</ul>
+				
+			</ul>
+
+			<hr>
+
+			<h3> Skills </h3>
+			<ul class = "noBulletPointsLists">
+				<li>GIS ✔️✔️✔️✔️</li>
+					<ul>
+						<li> Spatial Programming</li>
+						<li> Cartography</li>
+						<li> Database Maintenance </li>
+						<li> Data QAQC</li>
+					</ul>
+				<li>Programming ✔️✔️✔️</li>
+					<ul>
+						<li> Python</li>
+						<li> HTML/CSS/Javascript</li>
+						<li> SQL</li>
+					</ul>
+				<li>Analysis ✔️✔️✔️</li>
+				<li>Data Wrangling ✔️✔️✔️✔️</li>
+			</ul>
+
+			<hr>
+
+			<h3> Education </h3>
+				<ul class = "noBulletPointsLists">
+					<li> <strong>University of South Carolina </strong></li>
+					<li> <em>B.S. Geography, GIS Emphasis </em></li>
+				</ul>
+			<hr>
+			<h3> Work Examples </h3>
+
+			<div class = "exampleGrid">
+
+				<div class = "exampleGridColumnHeaderCartography"> 
+					Cartography 
+				</div>
+				
+				<div class = "exampleGridColumnHeaderProgramming">
+					Python Programming
+				</div>
+
+				<div class = "exampleGridColumnHeaderDashboards">
+					Other Programming
+				</div>	
+				
+				<div>
+					<a href = "Photos/Examples/Cartography/SIRR/Figure8-2 SIRR Projects on Minor Components.pdf" style= "visited: green"> SIRR deliverable to the EPA to demonstrate utility assets that have been rehabbed </a>
+				</div>
+				
+				<div>
+					<a href = "https://github.com/micah-luchay/ArcPy-FacilityID-Duplicate-Check/blob/main/Duplicate%20Facility%20ID%20Check%20(Replica).py"> ArcPy script to automatically check a database for duplicate asset IDs</a>
+				</div>
+				
+				<div>
+					<a href = "Leaflet Example/Index.html"> Use of Leaflet to display median ages by race in Columbia, SC </a>
+				</div>
+				
+				<div>
+					<a href = "Photos/Examples/Cartography/SSOs/SSO_YTD_Cause_December.pdf"> Sanitary Sewer Overflows within Columbia, SC - 2020 </a>
+				</div>
+				
+				<div>
+					<a href = "https://github.com/micah-luchay/ArcPy-Sewer-Gravity-Main-Attribute-Transfer/blob/main/Main%20Attribute%20Transfer%20(Replica).py"> ArcPy script to automate attribute integration </a>
+				</div>
+				
+				<div>
+					<a href = "Gravity Main Elevation Calculator/Gravity Main Elevation Calculator.html"> Calculate upstream main elevation using main length, slope, and downstream elevation </a>
+				</div>
+				
+				<div>
+					<a href = "Photos/Examples/Cartography/Field Maps/Pruitt at Stepp/Pruitt Dr and Stepp Dr Elevations.pdf"> Field map used by surveyors </a>
+				</div>
+				
+				<div>
+					<a href = ""> Python script to data wrangle file names </a>
+				</div>
+				
+				<div>
+					
+				</div>
+				
+			</div>
+
+			<br>
+				
+			<hr>
+
+			<h3> Interests </h3>
+				<ul style = "list-style-type: circle">
+					<li>Bread Baking</li>
+					<li>Camping</li>
+					<li>Exercise</li>
+					<li>Programming</li>
+				</ul>
+		</div>
+	</div>
+	
+<script src="Javascript\indexJavascript.js"></script>
+</body>
+</html>
