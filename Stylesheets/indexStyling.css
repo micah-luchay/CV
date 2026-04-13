@@ -84,10 +84,10 @@ hr {
 			outline-offset: -2px;
 			background-color: white;
 			display: grid;
-			grid-template-columns: 1fr 1fr 1fr;
-			grid-template-rows: 1fr 1fr;
-			grid-column: 1;
-			grid-row: 1;
+			grid-template-columns: 1fr 5fr 1fr;
+			grid-template-rows: 15fr 1fr;
+			grid-column: 2 / span 3;
+			grid-row: 2;
 			height: 100%;
 			justify-content: center;
 			overflow: hidden;
