@@ -13,7 +13,7 @@ hr {
 .bodyContainer {
 	align-items: top;
 	display: grid;
-	grid-template-columns: 1fr;
+	grid-template-columns: 0.75fr;
 	grid-template-rows: 1fr;
 	justify-content: center;
 	position: relative;
