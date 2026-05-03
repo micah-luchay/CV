@@ -1,8 +1,15 @@
-var map = L.map('map').setView([51.505, -0.09], 13);
+var map = L.map('map').setView([39.828, -98.579], 9);
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
+
+fetch("https://9mwhsiw89d.execute-api.us-east-2.amazonaws.com/retrieve-geojson")
+  .then(response => response.json())
+  .then(data => {
+    L.geoJSON(data).addTo(map);
+  })
+  .catch(error => console.error(error));
 
 class slideShowSlide {  // class for slide show objects
 	constructor(index, description, photoSrc, photoAlt) {
