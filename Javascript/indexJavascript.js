@@ -1,3 +1,5 @@
+var map = L.map('map').setView([51.505, -0.09], 13);
+
 class slideShowSlide {  // class for slide show objects
 	constructor(index, description, photoSrc, photoAlt) {
 		this.index = index; // order in slide
