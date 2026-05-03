@@ -91,7 +91,7 @@ hr {
 			grid-template-rows: 15fr 1fr;
 			grid-column: 2 / span 3;
 			grid-row: 2;
-			height: 50%;
+			height: 35%;
 			justify-content: center;
 			overflow: hidden;
 			text-align: center;
