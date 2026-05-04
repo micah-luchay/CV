@@ -16,7 +16,7 @@ hr {
 	align-items: top;
 	display: grid;
 	grid-template-columns: 0.75fr;
-	grid-template-rows: 0.85fr 2fr;
+	grid-template-rows: 2fr;
 	justify-content: center;
 	position: relative;
 	font-size: 18px;
