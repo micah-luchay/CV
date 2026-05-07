@@ -4,13 +4,20 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 
+function onEachFeature(feature, layer) {
+    // does this feature have a property named popupContent?
+    if (feature.properties && feature.properties.popupContent) {
+        layer.bindPopup(feature.properties);
+    }
+}
+
 fetch("https://9mwhsiw89d.execute-api.us-east-2.amazonaws.com/retrieve-geojson")
   .then(response => response.json())
   .then(data => {
-    var weatherData = L.geoJSON(data).addTo(map);
-	weatherData.popup();
+    L.geoJSON(data, {onEachFeature: onEachFeature}).addTo(map);
   })
   .catch(error => console.error(error));
+
 
 class slideShowSlide {  // class for slide show objects
 	constructor(index, description, photoSrc, photoAlt) {
