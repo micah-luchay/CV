@@ -7,7 +7,8 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 fetch("https://9mwhsiw89d.execute-api.us-east-2.amazonaws.com/retrieve-geojson")
   .then(response => response.json())
   .then(data => {
-    L.geoJSON(data).addTo(map);
+    weatherData = L.geoJSON(data).addTo(map);
+	weatherData.popup();
   })
   .catch(error => console.error(error));
 
