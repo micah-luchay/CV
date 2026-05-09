@@ -11,7 +11,12 @@ function onEachFeature(feature, layer) {
     }
 }
 
-fetch("https://9mwhsiw89d.execute-api.us-east-2.amazonaws.com/retrieve-geojson")
+fetch("https://9mwhsiw89d.execute-api.us-east-2.amazonaws.com/retrieve-geojson",{
+  headers: {
+    'api-key': 'secret key'
+  }
+}
+	 )
   .then(response => response.json())
   .then(data => {
     L.geoJSON(data, {onEachFeature: onEachFeature}).addTo(map);
