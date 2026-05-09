@@ -13,7 +13,7 @@ function onEachFeature(feature, layer) {
 
 fetch("https://9mwhsiw89d.execute-api.us-east-2.amazonaws.com/retrieve-geojson", {
   headers: {
-    'blah': 'secret key'
+    'x-api-key': 'secret key'
   }
 })
   .then(response => response.json())
