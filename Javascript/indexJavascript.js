@@ -10,7 +10,6 @@ function onEachFeature(feature, layer) {
     for (const key in feature.properties) {
         popupContent += `<b>${key}</b>: ${feature.properties[key]}<br>`;
     }
-	
         layer.bindPopup(popupContent).openPopup();
 }
 
