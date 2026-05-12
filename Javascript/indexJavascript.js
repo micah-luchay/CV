@@ -16,7 +16,7 @@ function onEachFeature(feature, layer) {
 	
     for (const key in feature.properties) {
 		var column = key.charAt(0).toUpperCase() + key.slice(1).toLowerCase();
-        popupContent += `<b>${column}</b>: ${feature.properties[key]}${popupUnits[key]} ?? ""<br>`;
+        popupContent += `<b>${column}</b>: ${feature.properties[key]}${popupUnits[key] ?? ""}<br>`;
     }
         layer.bindPopup(popupContent).openPopup();
 }
