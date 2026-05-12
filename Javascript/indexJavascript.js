@@ -13,6 +13,7 @@ function onEachFeature(feature, layer) {
 		var el = document.createElement('div');
 		el.textContent = "YUP";
 		layer.bindPopup(el);
+	}
 }
 
 fetch("https://9mwhsiw89d.execute-api.us-east-2.amazonaws.com/retrieve-geojson", {
