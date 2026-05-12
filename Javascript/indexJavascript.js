@@ -4,10 +4,6 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 
-var icon = L.icon({
-	iconUrl: 'Photos/Icon/red-map-pin-3d-render-classic-location-marker_986584-61552.png'
-						);
-
 let popupUnits = new Object();
 popupUnits['temperature'] = '°';
 popupUnits['precipitation'] = '%';
@@ -15,14 +11,26 @@ popupUnits['humidity'] = '%';
 popupUnits['windspeed'] = 'mph';
 
 function onEachFeature(feature, layer) {
-    // does this feature have a property named popupContent?
 	let popupContent = "";
 	
-    for (const key in feature.properties) {
+    for (const key in feature.properties) { // loop through each feature and grab properties, convert first let to uppercase, and add unit
 		var column = key.charAt(0).toUpperCase() + key.slice(1).toLowerCase();
         popupContent += `<b>${column}</b>: ${feature.properties[key]}${popupUnits[key] ?? ""}<br>`;
     }
         layer.bindPopup(popupContent).openPopup();
+}
+
+var iconSymbol = L.icon({
+	iconUrl: 'Photos/Icon/red-map-pin-3d-render-classic-location-marker_986584-61552.png'
+});
+
+iconOptions = {
+	icon = iconSymbol,
+	riseOnHover = true
+}
+
+function addMarker(feature, LatLng) {
+	return L.marker(LatLng, iconOptions);
 }
 
 fetch("https://9mwhsiw89d.execute-api.us-east-2.amazonaws.com/retrieve-geojson", {
@@ -32,7 +40,7 @@ fetch("https://9mwhsiw89d.execute-api.us-east-2.amazonaws.com/retrieve-geojson",
 })
   .then(response => response.json())
   .then(data => {
-    L.geoJSON(data, {onEachFeature: onEachFeature}).addTo(map);
+    L.geoJSON(data, {onEachFeature: onEachFeature, pointToLayer: addMarker}).addTo(map);
   })
   .catch(error => console.error(error));
 
