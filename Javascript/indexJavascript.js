@@ -9,6 +9,10 @@ function onEachFeature(feature, layer) {
     if (feature.properties.longitude) {
         layer.bindPopup(feature.properties.longitude);
     }
+	else {
+		var el = document.createElement('div');
+		el.textContent = "YUP";
+		layer.bindPopup(el);
 }
 
 fetch("https://9mwhsiw89d.execute-api.us-east-2.amazonaws.com/retrieve-geojson", {
