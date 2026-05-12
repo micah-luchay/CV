@@ -6,7 +6,7 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 function onEachFeature(feature, layer) {
     // does this feature have a property named popupContent?
-        layer.bindPopup(feature.properties);
+        layer.bindPopup("YUP");
 }
 
 fetch("https://9mwhsiw89d.execute-api.us-east-2.amazonaws.com/retrieve-geojson", {
