@@ -4,11 +4,18 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 
+let popupUnits = new Object();
+popupUnits['temperature'] = '°';
+popupUnits['precipitation'] = '%';
+popupUnits['humidity'] = '%';
+popupUnits['windspeed'] = 'mph';
+
 function onEachFeature(feature, layer) {
     // does this feature have a property named popupContent?
 	let popupContent = "";
+	
     for (const key in feature.properties) {
-        popupContent += `<b>${key}</b>: ${feature.properties[key]}<br>`;
+        popupContent += `<b>${key}</b>: ${feature.properties[key]}${popupUnits[key]}<br>`;
     }
         layer.bindPopup(popupContent).openPopup();
 }
