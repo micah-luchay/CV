@@ -4,6 +4,10 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 
+var icon = L.icon({
+	iconUrl: 'Photos/Icon/red-map-pin-3d-render-classic-location-marker_986584-61552.png'
+						);
+
 let popupUnits = new Object();
 popupUnits['temperature'] = '°';
 popupUnits['precipitation'] = '%';
