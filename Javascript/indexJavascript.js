@@ -24,10 +24,10 @@ var iconSymbol = L.icon({
 	iconUrl: 'Photos/Icon/red-map-pin-3d-render-classic-location-marker_986584-61552.png'
 });
 
-iconOptions = {
+var iconOptions = {
 	icon = iconSymbol,
 	riseOnHover = true
-}
+};
 
 function addMarker(feature, LatLng) {
 	return L.marker(LatLng, iconOptions);
