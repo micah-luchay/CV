@@ -22,7 +22,7 @@ function onEachFeature(feature, layer) {
 
 var iconSymbol = L.icon({
 	iconUrl: 'Photos/Icon/red marker 1.png',
-	iconSize: [30, 30]
+	iconSize: [40, 40]
 });
 
 var iconOptions = {
