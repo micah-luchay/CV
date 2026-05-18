@@ -25,8 +25,8 @@ var iconSymbol = L.Icon({
 });
 
 var iconOptions = {
-	icon = iconSymbol,
-	riseOnHover = true
+	icon: iconSymbol,
+	riseOnHover: true
 };
 
 function addMarker(feature, LatLng) {
