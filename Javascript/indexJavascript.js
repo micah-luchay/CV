@@ -21,7 +21,8 @@ function onEachFeature(feature, layer) {
 }
 
 var iconSymbol = L.icon({
-	iconUrl: 'Photos/Icon/red-map-pin-3d-render-classic-location-marker_986584-61552.png'
+	iconUrl: 'Photos/Icon/red-map-pin-3d-render-classic-location-marker_986584-61552.png',
+	iconSize: [2, 95]
 });
 
 var iconOptions = {
