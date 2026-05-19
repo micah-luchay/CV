@@ -226,22 +226,21 @@ hr {
 				text-align: center;
 			}
 
-
-			.exampleGridColumnHeaderCartography {
+			.exampleGridColumnHeaderProgramming {
 				font-size: 20px;
 				grid-column: 1/2;
 				grid-row: 1;
 				text-align: center;
 			}
 
-			.exampleGridColumnHeaderProgramming {
+			.exampleGridColumnHeaderDashboards {
 				font-size: 20px;
 				grid-column: 2/3;
 				grid-row: 1;
 				text-align: center;
 			}
 
-			.exampleGridColumnHeaderDashboards {
+			.exampleGridColumnHeaderCartography {
 				font-size: 20px;
 				grid-column: 3/4;
 				grid-row: 1;
